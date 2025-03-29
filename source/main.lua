@@ -2,6 +2,8 @@ import "CoreLibs/graphics"
 import "CoreLibs/sprites"
 import "title.lua"
 import "gameplay.lua"
+import "win.lua"
+import "lose.lua"
 
 local pd = playdate
 local gfx = pd.graphics
@@ -22,4 +24,5 @@ function pd.update()
         GameState.update()
     end
 end
+
 

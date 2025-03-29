@@ -13,16 +13,21 @@ local toDraw = {}
 
 function Title.init()
     toDraw = {}
-    AddImage(toDraw, titleImage, 0, 0)
+    --AddImage(toDraw, titleImage, 0, 0)
 end
 
 function Title.update()
+
     for i, img in ipairs(toDraw) do
         img[1]:draw(img[2], img[3])
     end
-    if pd.buttonIsPressed(playdate.kButtonA) then
+
+    if pd.buttonJustPressed(playdate.kButtonA) then
         ChangeState(Gameplay)
     end
+
+    gfx.drawText("Press A to Start", 200, 120)
+    
 end
 
 function AddImage(tableToAddTo, img, x, y)
