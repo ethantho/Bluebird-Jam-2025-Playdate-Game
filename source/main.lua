@@ -4,6 +4,7 @@ import "title.lua"
 import "gameplay.lua"
 import "win.lua"
 import "lose.lua"
+import "caught.lua"
 
 local pd = playdate
 local gfx = pd.graphics
