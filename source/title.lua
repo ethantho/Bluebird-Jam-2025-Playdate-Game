@@ -27,7 +27,7 @@ function Title.update()
     end
 
     gfx.drawText("Press A to Start", 200, 120)
-    
+
 end
 
 function AddImage(tableToAddTo, img, x, y)
