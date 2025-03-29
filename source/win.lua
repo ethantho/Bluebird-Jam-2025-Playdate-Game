@@ -9,7 +9,7 @@ Win = {}
 function Win.init()
     gfx.clear()
     gfx.drawText("Win", 200, 120)
-    pd.wait(2000)
+    pd.wait(1000)
 end
 
 function Win.update()

@@ -9,7 +9,7 @@ Lose = {}
 function Lose.init()
     gfx.clear()
     gfx.drawText("L+RATIO", 200, 120)
-    pd.wait(250)
+    pd.wait(1000)
 end
 
 function Lose.update()
